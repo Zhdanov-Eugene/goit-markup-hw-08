@@ -13,19 +13,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
   </head>
   <body>
-    <!--ХЕДЕР-->
+    <!--page-header-->
     <header class="page-header">
       <div class="container page-header__container">
+        <!-- navigation for site -->
         <nav class="page-header__nav">
+          <!-- logo -->
           <a class="logo page-header__logo" href="./index.html">
             <span class="logo__web">Web</span
             ><span class="logo__studio">Studio</span>
           </a>
-
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a
@@ -34,7 +34,6 @@
                 >Студия</a
               >
             </li>
-
             <li class="site-nav__item">
               <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
@@ -43,7 +42,7 @@
             </li>
           </ul>
         </nav>
-
+        <!-- contacts-top -->
         <ul class="contacts-top list">
           <li class="contacts-top__item">
             <a class="contacts-top__link" href="mailto:info@devstudio.com">
@@ -63,7 +62,7 @@
       </div>
     </header>
 
-    <!--ОСНОВНОЙ КОНТЕЙНЕР-->
+    <!--MAIN CONTAINER-->
     <main>
       <!--hero-->
       <section class="hero">
@@ -140,6 +139,7 @@
       <section class="section our-works">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
+
           <ul class="our-works__items list">
             <li class="our-works__item">
               <div class="our-works__overlay">
@@ -184,7 +184,9 @@
       <section class="section our-team">
         <div class="container">
           <h2 class="section__title our-team__title">Наша команда</h2>
+
           <ul class="our-team__items list">
+            <!-- Игорь Демьяненко -->
             <li class="our-team__item">
               <img
                 class="our-team__photo"
@@ -241,7 +243,7 @@
                 </ul>
               </div>
             </li>
-
+            <!-- Ольга Репина -->
             <li class="our-team__item">
               <img
                 class="our-team__photo"
@@ -297,7 +299,7 @@
                 </ul>
               </div>
             </li>
-
+            <!-- Николай Тарасов -->
             <li class="our-team__item">
               <img
                 class="our-team__photo"
@@ -353,7 +355,7 @@
                 </ul>
               </div>
             </li>
-
+            <!-- Михаил Ермаков -->
             <li class="our-team__item">
               <img
                 class="our-team__photo"
@@ -417,6 +419,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
+
           <ul class="clients__items list">
             <li class="clients__item">
               <a class="clients__link" href="#">
@@ -425,6 +428,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg width="40" height="52">
@@ -432,6 +436,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg width="41" height="43">
@@ -439,6 +444,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg width="80" height="42">
@@ -446,6 +452,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg width="59" height="47">
@@ -453,6 +460,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg width="88" height="45">
@@ -469,10 +477,12 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="page-footer__info">
+          <!-- logo -->
           <a class="logo page-footer__logo" href="./index.html">
             <span class="logo__web">Web</span
             ><span class="logo__studio logo__studio--white">Studio</span>
           </a>
+          <!-- contacts-bottom -->
           <ul class="contacts-bottom list">
             <li class="contacts-bottom__item contacts-bottom__location">
               г. Киев, пр-т Леси Украинки, 26
@@ -489,7 +499,7 @@
             </li>
           </ul>
         </div>
-
+        <!-- socials-net -->
         <div class="socials-footer">
           <h3 class="socials-footer__title">присоединяйтесь</h3>
           <ul class="socials-net list">
@@ -523,7 +533,7 @@
             </li>
           </ul>
         </div>
-
+        <!-- subscription -->
         <div class="subscription">
           <p class="subscription__title">Подпишитесь на рассылку</p>
           <form class="subscription__form">
@@ -550,7 +560,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" type="button" data-modal-close>
