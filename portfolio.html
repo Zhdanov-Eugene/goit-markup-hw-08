@@ -26,18 +26,30 @@
             <span class="logo__web">Web</span
             ><span class="logo__studio">Studio</span>
           </a>
+          <!-- <div class="menu-container" id="menu-container" data-menu></div>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="falce"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Мобильное меню">
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button> -->
 
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
-            </li>
-
-            <li class="site-nav__item">
               <a
                 class="site-nav__link site-nav__link--current"
-                href="./portfolio.html"
-                >Портфолио</a
+                href="./index.html"
+                >Студия</a
               >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
@@ -48,14 +60,14 @@
         <ul class="contacts-top list">
           <li class="contacts-top__item">
             <a class="contacts-top__link" href="mailto:info@devstudio.com">
-              <svg class="contacts-top__icon" width="16" height="12">
+              <svg class="contacts-top__envelope">
                 <use href="./images/sprite.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts-top__item">
             <a class="contacts-top__link" href="tel:+380961111111">
-              <svg class="contacts-top__icon" width="10" height="16">
+              <svg class="contacts-top__smartphone">
                 <use href="./images/sprite.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -383,7 +395,8 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
     <!-- <script src="./js/form.js"></script> -->
   </body>
 </html>
