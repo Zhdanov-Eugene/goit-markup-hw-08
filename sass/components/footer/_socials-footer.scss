@@ -1,9 +1,23 @@
 /* socials-footer */
 .socials-footer {
-  margin-left: 70px;
-  width: 206px;
-  height: 80px;
-  /* outline: 1px solid red; */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    width: 206px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-bottom: 0px;
+    height: 80px;
+  }
+
+  outline: 1px solid red;
 
   &__title {
     font-style: normal;
