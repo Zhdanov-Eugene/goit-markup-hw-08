@@ -1,18 +1,44 @@
 /* filtres */
 .filtres {
   display: flex;
-  align-items: center;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
 
-  margin-bottom: 50px;
-  min-width: 611px;
+    margin-bottom: 50px;
+    min-width: 611px;
+    flex-wrap: nowrap;
+  }
 
   &__item {
     margin-right: 8px;
   }
+
+  @media screen and (max-width: 767px) {
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+
   &__item:last-child {
     margin-right: 0px;
   }
+
+  @media screen and (max-width: 767px) {
+    &__item:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__item:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
   &__btn {
     color: $text-title-color;
     background-color: $background-team-color;
