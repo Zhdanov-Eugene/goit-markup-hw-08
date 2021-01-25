@@ -1,7 +1,17 @@
 /* site-nav */
 
 .site-nav {
-  display: flex;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   &__item {
     margin-right: 50px;
