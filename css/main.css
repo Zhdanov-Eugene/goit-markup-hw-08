@@ -340,7 +340,6 @@ img {
 .button-subscription,
 .button-modal,
 .button-submit {
-  display: inline-block;
   min-width: 200px;
   max-height: 50px;
   padding-top: 10px;
@@ -375,26 +374,45 @@ img {
           transform: translateX(50%);
 }
 
+@media screen and (max-width: 479px) {
+  .modal__button-submit {
+    -webkit-transform: translateX(calc(100% / 4));
+            transform: translateX(calc(100% / 4));
+  }
+}
+
 /* button-subscription */
 .subscription__button-subscription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-right: 28px;
   padding-left: 29px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription__button-subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__button-subscription {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 .button-subscription__icon {
   fill: currentColor;
   margin-left: 10px;
-}
-
-.button-subscription {
-  padding-right: 28px;
-  padding-left: 29px;
 }
 
 .button:hover,
