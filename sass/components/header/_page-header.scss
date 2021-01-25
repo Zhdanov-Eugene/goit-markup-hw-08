@@ -13,7 +13,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    &__nav {
+    &__menu-container {
       display: flex;
       align-items: center;
     }
@@ -22,49 +22,81 @@
 /* justify-content: space-between; */
 
 ////////////////////////////////////////////
-.menu-backdrop {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+// .menu-backdrop {
+//   position: fixed;
+//   z-index: 2;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
 
-  background-color: $background-modal-color-overlay;
-  opacity: 1;
-  transition: opacity $transition-time $time-distribution-function;
-}
-.menu-backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+//   background-color: $background-modal-color-overlay;
+//   opacity: 1;
+//   transition: opacity $transition-time $time-distribution-function;
+// }
+// .menu-backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
 
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//   }
 .menu-container {
-  display: none;
-  // position: absolute;
-  top: 100%;
-  left: 0;
-  width: 480px;
-  height: 453px;
-
-  padding: 20px;
   text-align: center;
   font-size: 20px;
 
-  background: $white-color;
+  // background: $white-color;
+  background: #bbece6;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
-  &.is-open {
-    display: block;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    // width: 480px;
+    // height: 453px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
   }
 }
 .menu-button {
-  display: inline-flex;
-  margin: 0;
   padding: 0;
+
+  min-width: 40px;
+  max-height: 40px;
+
   border: none;
-  background-color: transparent;
+  background-color: aqua;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .menu-button .icon-menu {
   display: block;
@@ -79,4 +111,18 @@
 
 .menu-button.is-open .icon-cross {
   display: block;
+}
+
+// .navigation,
+// .contacts-top {
+//   width: 480px;
+//   height: 453px;
+// }
+
+.navigation {
+  outline: 1px solid green;
+}
+
+.contacts-top {
+  outline: 1px solid orangered;
 }

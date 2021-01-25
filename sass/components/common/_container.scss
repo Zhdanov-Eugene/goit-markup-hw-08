@@ -10,6 +10,8 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    display: inline-flex;
+    justify-content: space-between;
   }
 }
 

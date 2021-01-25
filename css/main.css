@@ -90,6 +90,12 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -153,7 +159,12 @@ img {
 .page-header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 276px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__logo {
+    width: 134px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -175,7 +186,7 @@ img {
 /* contacts-top */
 @media screen and (max-width: 768px) {
   .contacts-top {
-    display: none;
+    display: block;
   }
 }
 
@@ -199,7 +210,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .contacts-top__item:not(:last-child) {
-    display: none;
+    display: block;
   }
 }
 
@@ -230,7 +241,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .contacts-top__link {
-    display: none;
+    display: block;
   }
 }
 
@@ -263,7 +274,7 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .contacts-top__envelope {
     margin-right: 8px;
     width: 14px;
@@ -283,11 +294,11 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .contacts-top__smartphone {
     margin-right: 8px;
-    width: 10px;
-    height: 14px;
+    width: 14px;
+    height: 10px;
   }
 }
 
@@ -524,7 +535,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__nav {
+  .page-header__menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -535,50 +546,64 @@ img {
 }
 
 /* justify-content: space-between; */
-.menu-backdrop {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .menu-container {
-  display: none;
-  top: 100%;
-  left: 0;
-  width: 480px;
-  height: 453px;
-  padding: 20px;
   text-align: center;
   font-size: 20px;
-  background: #ffffff;
+  background: #bbece6;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-.menu-container.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: none;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
   padding: 0;
+  min-width: 40px;
+  max-height: 40px;
   border: none;
-  background-color: transparent;
+  background-color: aqua;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-menu {
@@ -597,44 +622,51 @@ img {
   display: block;
 }
 
-/* site-nav */
-.site-nav {
+.navigation {
+  outline: 1px solid green;
+}
+
+.contacts-top {
+  outline: 1px solid orangered;
+}
+
+/* navigation */
+.navigation {
   /* В главной навигации, при помощи псевдоэлемента,
  сделано подчёркивание текущей ссылки */
 }
 
-@media screen and (max-width: 768px) {
-  .site-nav {
-    display: none;
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav {
+  .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 84px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .site-nav {
+  .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.site-nav__item {
+.navigation__item {
   margin-right: 50px;
 }
 
-.site-nav__item:last-child {
+.navigation__item:last-child {
   margin-right: 0px;
 }
 
-.site-nav__link {
+.navigation__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -648,7 +680,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link::after {
+.navigation__link::after {
   content: '';
   position: absolute;
   display: block;
@@ -662,19 +694,19 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover::after, .site-nav__link:focus::after {
+.navigation__link:hover::after, .navigation__link:focus::after {
   opacity: 1;
 }
 
-.site-nav__link--current::after {
+.navigation__link--current::after {
   opacity: 1;
 }
 
-.site-nav__link:hover, .site-nav__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
 
-.site-nav__link--current {
+.navigation__link--current {
   color: #2196f3;
 }
 
@@ -702,6 +734,7 @@ img {
   .hero {
     padding-top: 118px;
     height: 400px;
+    max-width: 1600px;
   }
 }
 
