@@ -90,12 +90,6 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
