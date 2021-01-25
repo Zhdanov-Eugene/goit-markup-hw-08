@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>goit-markup-hw-08</title>
+    <title>working-wersion</title>
   </head>
   <body>
     <!--page-header-->
@@ -26,6 +26,20 @@
             <span class="logo__web">Web</span
             ><span class="logo__studio">Studio</span>
           </a>
+          <!-- <div class="menu-container" id="menu-container" data-menu></div>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="falce"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Мобильное меню">
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+          </button> -->
+
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a
@@ -46,14 +60,14 @@
         <ul class="contacts-top list">
           <li class="contacts-top__item">
             <a class="contacts-top__link" href="mailto:info@devstudio.com">
-              <svg class="contacts-top__icon" width="16" height="12">
+              <svg class="contacts-top__envelope">
                 <use href="./images/sprite.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts-top__item">
             <a class="contacts-top__link" href="tel:+380961111111">
-              <svg class="contacts-top__icon" width="10" height="16">
+              <svg class="contacts-top__smartphone">
                 <use href="./images/sprite.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -184,9 +198,7 @@
       <section class="section our-team">
         <div class="container">
           <h2 class="section__title our-team__title">Наша команда</h2>
-
           <ul class="our-team__items list">
-            <!-- Игорь Демьяненко -->
             <li class="our-team__item">
               <img
                 class="our-team__photo"
@@ -243,7 +255,6 @@
                 </ul>
               </div>
             </li>
-            <!-- Ольга Репина -->
             <li class="our-team__item">
               <img
                 class="our-team__photo"
@@ -640,6 +651,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <!-- <script src="./js/form.js"></script> -->
   </body>
