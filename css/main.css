@@ -1323,6 +1323,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1359,17 +1360,38 @@ img {
   /* checkbox */
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+    height: 609px;
+  }
+}
+
 .modal__title {
   display: block;
   margin-top: 0px;
   margin-bottom: 12px;
-  width: 448px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+    width: 100%;
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+    width: 448px;
+  }
 }
 
 .modal__form-info {
@@ -1381,11 +1403,22 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   max-height: 342px;
-  width: 448px;
   margin-top: 0px;
   margin-bottom: 20px;
   text-align: left;
-  /* outline: 1px solid red; */
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__form-info {
+    width: 100%;
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form-info {
+    width: 448px;
+  }
 }
 
 .modal__form-client {
@@ -1498,10 +1531,22 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal__check {
+    height: 15px;
+  }
+}
+
 .modal__check-link {
   color: #2196f3;
   text-decoration: underline;
-  margin-left: 7px;
+  margin-left: 3px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__check-link {
+    margin-left: 7px;
+  }
 }
 
 .modal__check-input:checked + .modal__check-icon {
@@ -1517,10 +1562,23 @@ img {
   /* justify-content: center;
   align-items: center; */
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__check-agreement {
+    font-size: 12px;
+    line-height: 1.17;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__check-agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 /* transform: translate - анемируемое свойство */
