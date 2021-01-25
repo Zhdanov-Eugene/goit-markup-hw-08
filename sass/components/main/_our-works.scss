@@ -6,6 +6,13 @@
 .our-works {
   padding-top: 0px;
 
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline;
+  }
   &__items {
     position: relative;
     display: flex;
