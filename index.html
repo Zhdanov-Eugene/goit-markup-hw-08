@@ -33,8 +33,14 @@
           data-menu-button
         >
           <svg width="40" height="40" aria-label="Мобильное меню">
-            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
-            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use
+              class="menu-button__icon-menu"
+              href="./images/sprite.svg#menu"
+            ></use>
+            <use
+              class="menu-button__icon-cross"
+              href="./images/sprite.svg#cross"
+            ></use>
           </svg>
         </button>
         <!-- navigation for site -->
@@ -44,7 +50,7 @@
           data-menu
         >
           <nav class="navigation">
-            <ul class="navigation list">
+            <ul class="navigation__items list">
               <li class="navigation__item">
                 <a
                   class="navigation__link navigation__link--current"
@@ -53,7 +59,9 @@
                 >
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="./portfolio.html">Портфолио</a>
+                <a class="navigation__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="">Контакты</a>
