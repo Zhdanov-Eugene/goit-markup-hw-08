@@ -18,7 +18,11 @@
   }
 
   &__item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+      width: calc((100% - 30px) / 1);
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 480px) {
       width: calc((100% - 30px) / 2);
       margin-bottom: 30px;
     }
@@ -34,7 +38,13 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 479px) {
+    &__item:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (min-width: 480px) {
     &__item:nth-last-child(-n + 2) {
       margin-bottom: 0px;
     }
