@@ -13,7 +13,7 @@
         "../sass/components/common/_contacts.scss",
         "../sass/components/common/_buttons.scss",
         "../sass/components/common/_socials-net.scss",
-        "../sass/components/header/_page-header.scss",
+        "../sass/components/header/_page-header_menu.scss",
         "../sass/components/header/_navigation.scss",
         "../sass/components/main/_hero.scss",
         "../sass/components/main/_features.scss",
