@@ -32,7 +32,6 @@ img {
 @media screen and (max-width: 767px) {
   .section {
     padding-bottom: 60px;
-    width: 480px;
   }
 }
 
