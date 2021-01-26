@@ -1,12 +1,13 @@
 /* page-header */
 
 .page-header {
-  position: relative;
+  // position: relative;
   background-color: $white-color;
   border-bottom: 1px solid $border-header-color;
 
   &__container {
     display: flex;
+    position: relative;
   }
 }
 

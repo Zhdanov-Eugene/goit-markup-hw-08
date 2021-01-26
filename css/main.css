@@ -88,7 +88,7 @@ img {
   outline: 1px solid red;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -515,7 +515,6 @@ img {
 
 /* page-header */
 .page-header {
-  position: relative;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -524,6 +523,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .menu-container {
