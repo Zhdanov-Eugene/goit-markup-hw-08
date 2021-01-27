@@ -1911,7 +1911,21 @@ img {
   letter-spacing: 0.03em;
 }
 
-.content__content__img {
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .content__content__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .content__content__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content__content__img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

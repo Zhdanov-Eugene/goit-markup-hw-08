@@ -115,11 +115,35 @@
             <li class="content__item">
               <a href="#">
                 <div class="content__product">
-                  <img
-                    class="content__img"
-                    src="./images/teshnocryc.jpg"
-                    alt="Технокряк. Веб-сайт"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                    ./images/mobile/portfolio/portfolio1/img@1x.jpg 1x,
+                    ./images/mobile/portfolio/portfolio1/img@2x.jpg 2x,
+                    ./images/mobile/portfolio/portfolio1/img@3x.jpg 3x."
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                    ./images/desktop/portfolio/portfolio1/img@1x.jpg 1x,
+                    ./images/desktop/portfolio/portfolio1/img@2x.jpg 2x,
+                    ./images/desktop/portfolio/portfolio1/img@3x.jpg 3x."
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                    ./images/tablet/portfolio/portfolio1/img@1x.jpg 1x,
+                    ./images/tablet/portfolio/portfolio1/img@2x.jpg 2x,
+                    ./images/tablet/portfolio/portfolio1/img@3x.jpg 3x."
+                      media="(min-width: 768px)"
+                    />
+
+                    <img
+                      class="content__img"
+                      src="./images/desktop/portfolio/portfolio1/img@1x.jpg"
+                      alt="Технокряк. Веб-сайт"
+                    />
+                  </picture>
                   <div class="content__overlay">
                     <p class="content__text">
                       Технокряк это современная площадка распространения
@@ -147,6 +171,7 @@
                       конкурентов.
                     </p>
                   </div>
+
                   <img
                     class="content__img"
                     src="./images/poster.jpg"
