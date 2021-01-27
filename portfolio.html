@@ -33,8 +33,14 @@
           data-menu-button
         >
           <svg width="40" height="40" aria-label="Мобильное меню">
-            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
-            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use
+              class="menu-button__icon-menu"
+              href="./images/sprite.svg#menu"
+            ></use>
+            <use
+              class="menu-button__icon-cross"
+              href="./images/sprite.svg#cross"
+            ></use>
           </svg>
         </button>
         <!-- navigation for site -->
@@ -46,14 +52,12 @@
           <nav class="navigation">
             <ul class="navigation__items list">
               <li class="navigation__item">
-                <a
-                  class="navigation__link navigation__link--current"
-                  href="./index.html"
-                  >Студия</a
-                >
+                <a class="navigation__link" href="./index.html">Студия</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="./portfolio.html"
+                <a
+                  class="navigation__link navigation__link--current"
+                  href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
@@ -112,6 +116,7 @@
               <a href="#">
                 <div class="content__product">
                   <img
+                    class="content__img"
                     src="./images/teshnocryc.jpg"
                     alt="Технокряк. Веб-сайт"
                   />
@@ -143,6 +148,7 @@
                     </p>
                   </div>
                   <img
+                    class="content__img"
                     src="./images/poster.jpg"
                     alt="Постер New Orlean vs Golden Star. Дизайн"
                   />
@@ -168,6 +174,7 @@
                     </p>
                   </div>
                   <img
+                    class="content__img"
                     src="./images/restaurant.jpg"
                     alt="Ресторан Seafood. Приложение"
                   />
@@ -190,7 +197,11 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img src="./images/prime.jpg" alt="Проект Prime. Маркетинг" />
+                  <img
+                    class="content__img"
+                    src="./images/prime.jpg"
+                    alt="Проект Prime. Маркетинг"
+                  />
                 </div>
                 <div class="content__card">
                   <h2 class="content__title">Проект Prime</h2>
@@ -211,6 +222,7 @@
                     </p>
                   </div>
                   <img
+                    class="content__img"
                     src="./images/boxes.jpg"
                     alt="Проект Boxes. Приложение"
                   />
@@ -234,6 +246,7 @@
                     </p>
                   </div>
                   <img
+                    class="content__img"
                     src="./images/inspiration.jpg"
                     alt="Inspiration has no Borders. Веб-сайт"
                   />
@@ -257,6 +270,7 @@
                     </p>
                   </div>
                   <img
+                    class="content__img"
                     src="./images/limitededition.jpg"
                     alt="Издание Limited Edition. Дизайн"
                   />
@@ -279,7 +293,11 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img src="./images/lab.jpg" alt="Проект LAB. Маркетинг" />
+                  <img
+                    class="content__img"
+                    src="./images/lab.jpg"
+                    alt="Проект LAB. Маркетинг"
+                  />
                 </div>
                 <div class="content__card">
                   <h2 class="content__title">Проект LAB</h2>
@@ -300,6 +318,7 @@
                     </p>
                   </div>
                   <img
+                    class="content__img"
                     src="./images/growing.jpg"
                     alt="Growing Business. Приложение"
                   />

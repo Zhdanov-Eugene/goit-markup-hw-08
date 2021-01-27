@@ -33,13 +33,14 @@
 .page-header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 270px;
+  // justify-content: space-between;
+  // margin-right: 270px;
 
-  @media screen and (max-width: 767px) {
-    width: 134px;
-    display: inline-flex;
-    justify-content: space-between;
-  }
+  // @media screen and (max-width: 767px) {
+  // width: 134px;
+  // display: flex;
+  // justify-content: space-between;
+  // }
 
   @media screen and (min-width: 768px) {
     padding-top: 26px;

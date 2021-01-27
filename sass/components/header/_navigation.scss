@@ -9,7 +9,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    // display: flex;
     margin-right: 84px;
 
     // width: 294px;
@@ -17,13 +17,19 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
+    // display: flex;
     margin-right: auto;
   }
 
   &__items {
+    // text-align: center;
+    // align-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     @media screen and (max-width: 767px) {
       text-align: center;
+
       // background-color: rgb(233, 219, 139);
     }
 
