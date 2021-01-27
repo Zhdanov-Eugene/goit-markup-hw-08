@@ -13,7 +13,7 @@
 }
 // ////////////////////////menu
 .menu-container {
-  z-index: 5;
+  z-index: 1;
   background: $white-color;
 
   @media screen and (max-width: 767px) {
@@ -81,15 +81,14 @@
   &__is-open .icon-cross {
     display: block;
   }
-}
 
-.icon-cross__:hover,
-.icon-menu__:hover,
-.icon-cross__:focus,
-.icon-menu__:focus {
-  color: $accent-blue-color;
+  &__icon-cross:hover,
+  &__icon-menu:hover,
+  &__icon-cross:focus,
+  &__icon-menu:focus {
+    color: $accent-blue-color;
+  }
 }
-
 // .navigation,
 // .contacts-top {
 //   width: 480px;

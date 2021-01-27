@@ -515,7 +515,7 @@ img {
 }
 
 .menu-container {
-  z-index: 5;
+  z-index: 1;
   background: #ffffff;
 }
 
@@ -601,10 +601,7 @@ img {
   display: block;
 }
 
-.icon-cross__:hover,
-.icon-menu__:hover,
-.icon-cross__:focus,
-.icon-menu__:focus {
+.menu-button__icon-cross:hover, .menu-button__icon-menu:hover, .menu-button__icon-cross:focus, .menu-button__icon-menu:focus {
   color: #2196f3;
 }
 
