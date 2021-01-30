@@ -592,13 +592,12 @@ img {
   padding: 50px;
 }
 
-@media screen and (max-width: 767px) {
-  .menu-button__close {
-    display: none;
-  }
-  .menu-button__is-open.close {
-    display: block;
-  }
+.menu-button__close {
+  display: none;
+}
+
+.menu-button__is-open.close {
+  display: block;
 }
 
 .menu-button__is-open.burger {

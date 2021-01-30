@@ -73,25 +73,23 @@
   &:focus {
     fill: $accent-blue-color;
   }
-}
 
-.menu-button__burger {
-  display: block;
-  padding: 50px;
-}
+  &__burger {
+    display: block;
+    padding: 50px;
+  }
 
-@media screen and (max-width: 767px) {
-  .menu-button__close {
+  &__close {
     display: none;
   }
 
-  .menu-button__is-open.close {
+  &__is-open.close {
     display: block;
   }
-}
 
-.menu-button__is-open.burger {
-  display: none;
+  &__is-open.burger {
+    display: none;
+  }
 }
 
 // .navigation,
