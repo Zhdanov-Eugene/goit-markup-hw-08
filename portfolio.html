@@ -28,27 +28,27 @@
         <button
           type="button"
           class="menu-button"
-          aria-expanded="falce"
+          aria-expanded="false"
           aria-controls="menu-container"
           data-menu-button
         >
-          <svg width="40" height="40" aria-label="Мобильное меню">
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
             <use
-              class="menu-button__icon-menu"
-              href="./images/sprite.svg#menu"
+              class="menu-button__close"
+              href="./images/sprite.svg#close"
             ></use>
             <use
-              class="menu-button__icon-cross"
-              href="./images/sprite.svg#cross"
+              class="menu-button__burger"
+              href="./images/sprite.svg#burger"
             ></use>
           </svg>
         </button>
         <!-- navigation for site -->
-        <div
-          class="menu-container page-header__menu-container"
-          id="menu-container"
-          data-menu
-        >
+        <div class="menu-container" id="menu-container" data-menu>
           <nav class="navigation">
             <ul class="navigation__items list">
               <li class="navigation__item">

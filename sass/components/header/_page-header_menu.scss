@@ -50,6 +50,7 @@
 // //////////////////button menu
 .menu-button {
   padding: 0;
+  margin: 0;
 
   min-width: 40px;
   max-height: 40px;
@@ -59,7 +60,6 @@
   align-items: center;
 
   @media screen and (max-width: 767px) {
-    display: inline-flex;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -67,28 +67,33 @@
     display: none;
   }
 
-  &__icon-menu {
-    display: block;
-  }
-  &__is-open .icon-menu {
-    display: none;
-  }
-
-  &__icon-cross {
-    display: none;
-  }
-
-  &__is-open .icon-cross {
-    display: block;
-  }
-
-  &__icon-cross:hover,
-  &__icon-menu:hover,
-  &__icon-cross:focus,
-  &__icon-menu:focus {
-    color: $accent-blue-color;
+  &:hover,
+  &:hover,
+  &:focus,
+  &:focus {
+    fill: $accent-blue-color;
   }
 }
+
+.menu-button__burger {
+  display: block;
+  padding: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button__close {
+    display: none;
+  }
+
+  .menu-button__is-open.close {
+    display: block;
+  }
+}
+
+.menu-button__is-open.burger {
+  display: none;
+}
+
 // .navigation,
 // .contacts-top {
 //   width: 480px;
