@@ -527,7 +527,6 @@ img {
     width: 100%;
     padding: 20px;
     display: none;
-    width: 480px;
     height: 453px;
     -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -616,7 +615,10 @@ img {
     display: block;
     width: 99px;
     min-height: 155px;
-    margin: 60px 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
