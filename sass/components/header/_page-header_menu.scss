@@ -58,6 +58,9 @@
   border: none;
   background-color: $white-color;
   align-items: center;
+  cursor: pointer;
+
+  transition: $time-distribution-function $transition-time;
 
   @media screen and (max-width: 767px) {
     margin-top: 10px;
