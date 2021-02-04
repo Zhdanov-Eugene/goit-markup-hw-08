@@ -8,7 +8,7 @@
     margin-right: 10px;
   }
 
-  &__link {
+  &__site {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,17 +19,17 @@
     transition: $transition-time $time-distribution-function;
   }
 
-  &__link--gray {
+  &__site--gray {
     fill: $cliennts-light-gray-color;
   }
 
-  &__link--white {
+  &__site--white {
     fill: $white-color;
     background: rgba(255, 255, 255, 0.1);
   }
 
-  &__link:hover,
-  &__link:focus {
+  &__site:hover,
+  &__site:focus {
     fill: $white-color;
     background-color: $accent-blue-color;
   }

@@ -329,7 +329,7 @@ img {
 }
 
 /* ...........Button........... */
-.button,
+.prymary-btn,
 .button-subscription,
 .button-modal,
 .button-submit {
@@ -355,7 +355,7 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button {
+.prymary-btn {
   padding-right: 32px;
   padding-left: 32px;
 }
@@ -421,7 +421,7 @@ img {
   cursor: pointer;
 }
 
-.button-close {
+.modal-close {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,8 +447,8 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-close:hover,
-.button-close:focus {
+.modal-close:hover,
+.modal-close:focus {
   fill: #2196f3;
   cursor: pointer;
 }
@@ -467,7 +467,7 @@ img {
   margin-right: 10px;
 }
 
-.socials-net__link {
+.socials-net__site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,16 +484,16 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-net__link--gray {
+.socials-net__site--gray {
   fill: #afb1b8;
 }
 
-.socials-net__link--white {
+.socials-net__site--white {
   fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.socials-net__link:hover, .socials-net__link:focus {
+.socials-net__site:hover, .socials-net__site:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -1164,7 +1164,7 @@ img {
   }
 }
 
-.clients__link {
+.clients__company {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -1186,7 +1186,7 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__company:hover, .clients__company:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }

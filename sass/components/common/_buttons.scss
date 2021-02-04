@@ -1,6 +1,6 @@
 /* ...........Button........... */
 
-.button,
+.prymary-btn,
 .button-subscription,
 .button-modal,
 .button-submit {
@@ -29,7 +29,7 @@
     background-color $transition-time $time-distribution-function;
 }
 
-.hero__button {
+.prymary-btn {
   padding-right: 32px;
   padding-left: 32px;
 }
@@ -83,7 +83,7 @@
   cursor: pointer;
 }
 
-.button-close {
+.modal-close {
   position: absolute;
   display: flex;
 
@@ -106,8 +106,8 @@
   transition: $transition-time $time-distribution-function;
 }
 
-.button-close:hover,
-.button-close:focus {
+.modal-close:hover,
+.modal-close:focus {
   fill: $accent-blue-color;
   cursor: pointer;
 }
